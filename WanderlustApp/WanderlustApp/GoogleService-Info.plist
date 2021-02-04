@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>741106060027-f9bigbscuqb4iq2fsfa339ojictl656b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.741106060027-f9bigbscuqb4iq2fsfa339ojictl656b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDG9c0SS4mKcxry-5-yV6X57BYuCQcwwGc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>741106060027</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>utcs.WanderlustApp</string>
+	<key>PROJECT_ID</key>
+	<string>wanderlust-81faa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wanderlust-81faa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:741106060027:ios:912abc162ec70b76d13e5e</string>
+	<key>DATABASE_URL</key>
+	<string>https://wanderlust-81faa.firebaseio.com</string>
+</dict>
+</plist>

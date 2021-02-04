@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vsY-ey-Q76">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="VGc-kt-wIu">
+            <objects>
+                <viewController id="vsY-ey-Q76" customClass="EditAccountSettingsViewController" customModule="WanderlustApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6D-ql-F3K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CuR-nN-8sv">
+                                <rect key="frame" x="20" y="125" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cyE-Ph-x9U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eBM-2D-yjG">
+                                <rect key="frame" x="20" y="125" width="374" height="135"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="3UN-kz-KLQ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj6-as-HB0">
+                                <rect key="frame" x="20" y="103" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RLH-2b-3W6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RLH-2b-3W6" firstAttribute="trailing" secondItem="aj6-as-HB0" secondAttribute="trailing" constant="20" id="5N1-s7-s8I"/>
+                            <constraint firstItem="CuR-nN-8sv" firstAttribute="top" secondItem="aj6-as-HB0" secondAttribute="bottom" constant="1" id="8NT-8A-CZi"/>
+                            <constraint firstItem="eBM-2D-yjG" firstAttribute="top" secondItem="aj6-as-HB0" secondAttribute="bottom" constant="1" id="Hkk-Zv-Nis"/>
+                            <constraint firstItem="CuR-nN-8sv" firstAttribute="leading" secondItem="RLH-2b-3W6" secondAttribute="leading" constant="20" id="IGL-qn-miw"/>
+                            <constraint firstItem="RLH-2b-3W6" firstAttribute="trailing" secondItem="eBM-2D-yjG" secondAttribute="trailing" constant="20" id="Nut-ft-gC7"/>
+                            <constraint firstItem="eBM-2D-yjG" firstAttribute="leading" secondItem="RLH-2b-3W6" secondAttribute="leading" constant="20" id="gyt-wl-GSe"/>
+                            <constraint firstItem="aj6-as-HB0" firstAttribute="top" secondItem="RLH-2b-3W6" secondAttribute="top" constant="15" id="hvs-Mg-IQf"/>
+                            <constraint firstItem="RLH-2b-3W6" firstAttribute="trailing" secondItem="CuR-nN-8sv" secondAttribute="trailing" constant="20" id="q2d-Z6-Lck"/>
+                            <constraint firstItem="aj6-as-HB0" firstAttribute="leading" secondItem="RLH-2b-3W6" secondAttribute="leading" constant="20" id="yAA-gO-dco"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="XHi-nF-wth">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="hrm-79-CWF">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="vsY-ey-Q76" id="EUy-Lr-Hi6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="bioTextView" destination="eBM-2D-yjG" id="dUZ-JN-Val"/>
+                        <outlet property="navItem" destination="XHi-nF-wth" id="QLX-fz-iHP"/>
+                        <outlet property="settingLabel" destination="aj6-as-HB0" id="emG-EP-Rls"/>
+                        <outlet property="textField" destination="CuR-nN-8sv" id="VDk-GN-3vp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPO-M1-5OR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

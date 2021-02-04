@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sVI-oq-IYR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="wxv-7H-b2b">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="sVI-oq-IYR" customClass="SettingsViewController" customModule="WanderlustApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iWu-cn-Utu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-ws-rAl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.59607843137254901" green="0.79607843137254897" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsCell" id="5ru-1c-UqB" customClass="SettingsTableViewCell" customModule="WanderlustApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5ru-1c-UqB" id="ztY-tG-vXH">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-iI-3CW">
+                                                    <rect key="frame" x="20" y="11" width="156" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dib-eY-nXp">
+                                                    <rect key="frame" x="209" y="11" width="166" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="settingDataLabel" destination="dib-eY-nXp" id="F6x-TD-YcZ"/>
+                                            <outlet property="settingNameLabel" destination="I9J-iI-3CW" id="ico-IU-SzP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountPrivacyCell" id="8G9-vq-6V6" customClass="AccountPrivacyTableViewCell" customModule="WanderlustApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8G9-vq-6V6" id="a3y-gr-pXY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFn-Fp-fZ0">
+                                                    <rect key="frame" x="20" y="11" width="158" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FA5-7l-Y8l">
+                                                    <rect key="frame" x="345" y="6" width="49" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="switchToggled:" destination="8G9-vq-6V6" eventType="valueChanged" id="k04-lx-pyF"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="privacySwitch" destination="FA5-7l-Y8l" id="wd2-M8-Maf"/>
+                                            <outlet property="titleLabel" destination="uFn-Fp-fZ0" id="lvp-6M-eOg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STu-AF-vrs">
+                                <rect key="frame" x="179.5" y="822" width="55" height="30"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButtonPressed:" destination="sVI-oq-IYR" eventType="touchUpInside" id="hfC-dy-JUA"/>
+                                    <segue destination="A1A-IZ-OgA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="gTj-c5-iPm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rSe-gN-MFw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AZ5-ws-rAl" firstAttribute="trailing" secondItem="rSe-gN-MFw" secondAttribute="trailing" id="3Cp-Vi-bLt"/>
+                            <constraint firstItem="STu-AF-vrs" firstAttribute="centerX" secondItem="iWu-cn-Utu" secondAttribute="centerX" id="BnH-hc-wtU"/>
+                            <constraint firstItem="rSe-gN-MFw" firstAttribute="bottom" secondItem="STu-AF-vrs" secondAttribute="bottom" constant="10" id="TWO-4p-XJj"/>
+                            <constraint firstItem="STu-AF-vrs" firstAttribute="top" secondItem="AZ5-ws-rAl" secondAttribute="bottom" constant="10" id="VcI-3H-7kN"/>
+                            <constraint firstItem="AZ5-ws-rAl" firstAttribute="leading" secondItem="rSe-gN-MFw" secondAttribute="leading" id="iin-42-KTj"/>
+                            <constraint firstItem="AZ5-ws-rAl" firstAttribute="top" secondItem="rSe-gN-MFw" secondAttribute="top" id="mcl-Oi-Rey"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="AZ5-ws-rAl" id="K1P-q3-3bH"/>
+                        <segue destination="T1f-H9-lgU" kind="show" identifier="editAccountSegueIdentifier" id="GTg-Re-5ij"/>
+                        <segue destination="nk1-Bx-Dz1" kind="show" identifier="editPasswordSegueIdentifier" id="Xpj-qX-y6H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOC-Sd-3sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139.13043478260872" y="81.026785714285708"/>
+        </scene>
+        <!--EditAccountSettings-->
+        <scene sceneID="zjy-9S-M9k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditAccountSettings" id="T1f-H9-lgU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dJK-Po-ONN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glN-Fw-GD7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="-111"/>
+        </scene>
+        <!--EditPassword-->
+        <scene sceneID="5Yl-Ko-hBY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditPassword" id="nk1-Bx-Dz1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="o7n-x3-fpz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fv5-Of-Uf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="256"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="qNE-dR-X31">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="A1A-IZ-OgA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T9c-oC-VTl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4z-8q-gA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
