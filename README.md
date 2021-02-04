@@ -3,3 +3,4 @@ Wanderlust is a social media app for adventurers to share their journeys! Wander
 
 
 ### This repository is only a copy so it doesn't show all the branches, issues, and commits. The original repository is private dues to security issues.
+### For the original Repo use: https://github.com/mengninggeng/summerHackProject
